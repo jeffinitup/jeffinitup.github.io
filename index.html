@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jeff's Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+    <link rel="stylesheet" href="/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +11,9 @@
 </head>
 
 <body>
-<header>
-    <nav class="navbar">
-        <div class="title">www.jefftastic.dev</div>
-        <a class="element"><u>About</u></a>
-        <a class="element">Projects</a>
-        <a class="element">Blog</a>
-    </nav>
-    <hr>
+
+<header id="navbar-container">
+    <script src="/template/navbar.js"></script>
 </header>
 
 <main>
@@ -44,7 +39,8 @@
         <li>LUA</li>
     </ul>
     <p>I personally skew towards languages that are statically typed, and don't involve much
-        manual memory management. My projects tend to not require as much control as lower
+        manual memory management. With this in mind, Java and C# have been my favorites to
+        work with! My projects tend to not require as much control as lower
         level languages give. I would eventually like to get more into C++ and
         try to pick up Rust, so I know how to use them when needed. (I suppose this is the
         natural progression of most programmers?)</p>
@@ -70,16 +66,10 @@
         on a screen. My project portfolio will tell you much more about me than words ever could.</p>
 </main>
 
+<header id="footer-container">
+    <script src="/template/footer.js"></script>
+</header>
 
-<footer>
-    <hr>
-    <div class="links">
-        <a href="https://www.github.com/jeffinitup">Github</a>
-        <a href="https://www.github.com/jeffinitup">Ko-Fi</a>
-    </div>
-
-    <p>Jeffrey M. © 2026</p>
-</footer>
 </body>
 </html>
 
