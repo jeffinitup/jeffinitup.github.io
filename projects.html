@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Projects</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/gallery.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +17,40 @@
 </header>
 
 <main>
-    <p>Here are my many projects.</p>
+    <div id="gallery-view">
+        <div id="project-grid" class="grid"></div>
+    </div>
+
+    <div id="detail-view" class="hidden">
+        <div class="project-header">
+
+            <div class="project-info">
+                <h2 id="detail-title" class="detail-title"></h2>
+                <div class="project-meta">
+                    <span id="detail-date"></span>
+                    <div id="detail-tag"></div>
+                </div>
+            </div>
+
+            <a class="link-button back" onclick="showGallery()">← Back</a>
+
+        </div>
+
+        <div id="detail-media"></div>
+        <div id="detail-links" class="detail-links"></div>
+        <div id="detail-description"></div>
+    </div>
 </main>
+
+<div id="fullscreen-modal" class="modal hidden" onclick="closeFullscreen()">
+    <span class="close-btn">&times;</span>
+    <button class="carousel-btn prev modal-btn" id="fs-prev-button">&#10094;</button>
+    <img id="fs-media" src="" alt="Fullscreen Preview">
+    <button class="carousel-btn next modal-btn" id="fs-next-button">&#10095;</button>
+    <p id="fullscreen-alt-text" class="bordered-label"></p>
+</div>
+
+<script src="/gallery/gallery.js"></script>
 
 <header id="footer-container">
     <script src="template/footer.js"></script>

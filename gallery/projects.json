@@ -1,0 +1,106 @@
+[
+  {
+    "id": "mite-renewed",
+    "title": "Minecraft is Too Easy Renewed",
+    "type": "Mod",
+    "lang": "Java",
+    "start_date": "2025-08-02",
+    "end_date": null,
+    "status": "Active",
+    "description": [
+      "Minecraft is Too Easy Renewed (aka MiTE Renewed) is a total conversion for Minecraft 1.6.4, built off of the original MiTE mod by Avernite. Minecraft is Too Easy aims to be a more challenging survival experience for veteran Minecraft players, with new mobs, resources, and mechanics.",
+      "The Renewed project is essentially a fan continuation of the original mod, of which ceased development around 2017. Renewed aims to polish up areas of the mod that were left underdeveloped; it is not officially endorsed and the design decisions are skewed to fit my own vision and ideas for the mod.",
+      "Renewed has made some big changes in various areas that sets it apart from the base MiTE experience; currently the early game portion has seen a major facelift in content and balance tweaks. There is also a brand new difficulty system, and a harder difficulty that exceeds the original MiTE in terms of challenge."
+    ],
+    "links": [
+      { "label": "Download", "url": "https://github.com/MinecraftIsTooEasy/mite-renewed/releases/latest" },
+      { "label": "Source", "url": "https://github.com/MinecraftIsTooEasy/mite-renewed/" }
+    ],
+    "media": [
+      { "type": "image", "url": "image3.gif", "alt": "A player hunting animals with a spear" },
+      { "type": "image", "url": "image4.gif", "alt": "A player panning gravel for resources" },
+      { "type": "image", "url": "image1.png", "alt": "A player standing in their house, showing crate blocks and item loot beams" },
+      { "type": "image", "url": "image2.png", "alt": "An image showing off Renewed's difficulty customization feature" }
+    ]
+  },
+  {
+    "id": "torkue",
+    "title": "TORKUE",
+    "type": "Game",
+    "lang": "C#",
+    "start_date": "2026-06-01",
+    "end_date": null,
+    "status": "Active",
+    "description": [
+      "It is an experimental platforming game, it is in early development",
+      "The objective will require intervention from a third party in order to see its conclusion"
+    ],
+    "links": [],
+    "media": []
+  },
+  {
+    "id": "jep-godot",
+    "title": "Jeffy Events 2 (JEP)",
+    "type": "Godot Plugin",
+    "lang": "GdScript",
+    "start_date": "2026-04-16",
+    "end_date": "2026-05-28",
+    "status": "Inactive",
+    "description": [
+      "A designer-friendly, graph-based event system architecture built for the Godot engine. Primarily intended for use as a cutscene/sequence driver for 2D games.",
+      "I made this as a solution to an issue I commonly encounter when developing games; cutscenes have always been messy to develop. In the past I've used code based solutions, mainly event macros that I would chain together in an linear array. While this approach is fine for solo endeavors, it gets tricky when working with a wider group of designers.",
+      "My first iteration, JEP 1, was much more basic in functionality and did not support visual data exchange (though it was possible to exchange data between events via code.) The new 2.0 version has support for data exchange, as well as numerous design improvements that improve extendability."
+    ],
+    "links": [
+      { "label": "Source", "url": "https://github.com/Cave-Dwellers/jeffy-events" }
+    ],
+    "media": [
+      { "type": "image", "url": "image1.png", "alt": "An image showing the plugin's frontend and an example graph" },
+      { "type": "embed", "url": "https://youtu.be/_xelxABgLmU?si=mofCdy_gZ7YNLfen", "alt": "A video showcasing the original iteration of Jeffy Events (1.0)"}
+    ]
+  },
+  {
+    "id": "cave-story-td",
+    "title": "Cave Story: The Desolate",
+    "type": "Game",
+    "lang": "GdScript",
+    "preview_ext": "webp",
+    "start_date": "2025-12-22",
+    "end_date": null,
+    "status": "Active",
+    "description": [
+      "A fan project based on the original freeware Cave Story game by Studio Pixel. This project makes heavy use of early Cave Story concepts, and attempts to twist them into a unique experience that's not quite like anything seen before.",
+      "Unlike most other projects featured on this site, I'm not the producer for this one. A friend and frequent collaborator, AbsoluteVendingMachine (or just \"AVM\") is leading this project, and has provided most of the direction and content. I am responsible for most of the game code and some of the artwork present, so I figure it would be worth mentioning here."
+    ],
+    "links": [
+      { "label": "AVM's Channel", "url": "https://www.youtube.com/@absolutevendingmachine" }
+    ],
+    "media": [
+      { "type": "image", "url": "image1.webp", "alt": "The player character jumping while shooting at an enemy. Various HUD elements are present" },
+      { "type": "video", "url": "video1.mp4", "alt": "Demonstrating a few rooms, menus, gameplay" },
+      { "type": "video", "url": "video2.mp4", "alt": "Demonstrating an experimental water feature" }
+    ]
+  },
+  {
+    "id": "newman-network",
+    "title": "Newman Network: Channel 64",
+    "type": "Game",
+    "lang": "GdScript",
+    "start_date": "2023-06-12",
+    "end_date": "2024-01-01",
+    "status": "Finished",
+    "description": [
+      "Newman Network: Channel 64 (or as it was released, \"Experiment Newman 64\" is a retro styled 3D collectathon platformer. It is styled after old computer games of the early 2000's, but also pulls some aesthetics from early 3D console gaming, such as the Nintendo 64.",
+      "Structurally, this project is one of my best to date. Godot centers itself around it's \"node\" system, which had been a point of confusion for me for the first few years using it. This project makes use of that system pretty heavily, as most of the game's functionality is broken down into granular parts. There was little friction in development, because I could just mix and match pieces I had made to make new content; wow, it felt great! Since then I've found a much bigger appreciation for Godot's design, and to a further extent object oriented programming.",
+      "Originally, Newman Network was intended to be a much bigger project, but those plans fell through. The game that was released is a fun, hour long romp, and serves as a vertical slice for a game that never came to be. It was the final game I produced in my adolescence, and in a way I see it as a heartfelt goodbye to that point in my life, and to the characters and stories that could have been."
+    ],
+    "links": [
+      { "label": "Download (itch.io)", "url": "https://futureprimitive.itch.io/experiment-newman-64" }
+    ],
+    "media": [
+      { "type": "image", "url": "image1.png", "alt": "The main character running through a grassy ruins. A great tower looms in the background" },
+      { "type": "image", "url": "image2.png", "alt": "The main character in the interior of the tower, running next to a sad blue mushroom" },
+      { "type": "image", "url": "image3.png", "alt": "The main character scaling the outer wall of the tower" }
+    ]
+  }
+]

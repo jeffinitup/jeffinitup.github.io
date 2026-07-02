@@ -1,0 +1,240 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 16px;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.project-card:hover {
+    background-color: #f0f0f0;
+}
+
+.card-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    background-color: #cfcfcf;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.placeholder-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #454545;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.bordered-label {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 8px;
+}
+
+.bordered-label.tag {
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &.active {
+        background-color: green;
+    }
+
+    &.finished {
+        background-color: purple;
+    }
+
+    &.inactive {
+        background-color: red;
+    }
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-title {
+    margin: 0;
+    line-height: .5em;
+}
+
+.detail-links {
+    display: flex;
+    gap: 16px;
+    margin: 8px 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.carousel-container {
+    position: relative;
+    margin: 8px 0;
+    background-color: #111;
+
+    overflow: hidden;
+    height: 400px;
+    border: 5px outset #000;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+    padding: 8px 8px 10px 8px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 12px;
+    transition: background-color 0.2s;
+    z-index: 10;
+
+    border: 2px groove #000;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.carousel-btn.prev {
+    left: 16px;
+}
+
+.carousel-btn.next {
+    right: 16px;
+}
+
+.carousel-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .2);
+    color: rgb(255 255 255 / 0.2);
+    transition: background-color 0.2s, color 0.5s;
+    padding: 2px 6px;
+    font-size: .85em;
+    font-weight: 600;
+    z-index: 10;
+    top: 16px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 1);
+        color: rgb(255 255 255);
+    }
+
+    &.page {
+        right: 16px;
+    }
+
+    &.alt-text {
+        left: 16px;
+        max-width: 300px;
+    }
+}
+
+.link-button {
+    border: 2px outset #000000;
+    flex: 1;
+    color: black;
+    background-color: #aaaaaa;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: #555;
+        color: rgb(255 255 255);
+    }
+
+    &.back {
+        max-width: 100px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: zoom-out;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.media-item {
+    max-width: 100%;
+    margin-top: 10px;
+}
